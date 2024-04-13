@@ -1,27 +1,243 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <title>Copa América 2024</title>
-    <link rel = "stylesheet" href = "styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa América 2024</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos externo -->
 </head>
+<!--------------------------------------------------------------------------------------->
 <body>
-    <header>
-        <h1>Copa América 2024</h1>
-    <div class = "logo">
-        <img src="images/logo_copa.png">
+  <header>
+    <div class="logo">
+      <img src="images/logo_copa.png" alt="Logo Copa América"> <!-- Imagen del logo de la Copa América -->
     </div>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Calendario</li>
-                <li>Estadios</li>
-                <li>Noticias</li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
-    </header>
-</body>
+    <h1>Copa América 2024</h1>
+    <nav class="navbar">
+      <ul class="horizontal-menu">
+        <li><a href="#calendario">Calendario</a></li>
+        <li><a href="#estadios">Estadios</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-------------------------------------------------------------------------------------->
+<section class="equipos">
+  <h2>Equipos participantes</h2>
+  <table class="tabla-equipos">
+    <tr>
+      <th>País</th>
+      <th>Bandera</th>
+      <th>Capitán</th>
+    </tr>
+    <tr>
+      <td>Argentina</td>
+      <td><img src="images/argentina.jpg" alt="Argentina" width="60" height="50"></td> <!-- Imagen de la bandera de Argentina -->
+      <td>Lionel Messi</td>
+    </tr>
+    <tr>
+      <td>Brasil</td>
+      <td><img src="images/brasil.jpg" alt="Brasil" width="60" height="50"></td> <!-- Imagen de la bandera de Brasil -->
+      <td>Neymar Jr.</td> 
+    </tr>
+    <tr>
+      <td>Perú</td>
+      <td><img src="images/peru.jpg" alt="Perú" width="60" height="50"></td> <!-- Imagen de la bandera de Perú -->
+      <td>Paolo Guerrero</td>
+    </tr>
+    <!-- Agregar más filas para otros equipos -->
+  </table>
+</section>  
+<!--------------------------------------------------------------------------------------> 
+<section class="estadios">
+  <h2 id="estadios">Estadios</h2>
+  <div class="imagen-mapa">
+    <img src="images/mapa-sedes.jpg" alt="Ciudades Sedes">
+  </div>
+  <div class="estadios-container">
+    <div class="estadio">
+      <img src="images/Benz-Stadium.jpg" alt="Mercedes-Benz Stadium" width="300" height="150">
+      <h3>Mercedes-Benz Stadium</h3>
+      <p>Atlanta, GA</p>
+      <p>Apertura</p>
+      <p>Capacidad: 71.000</p>
+    </div>
+    <div class="estadio">
+      <img src="images/hardrock.jpg" alt="Hard Rock Stadium" width="300" height="150">
+      <h3>Hard Rock Stadium</h3>
+      <p>Miami Gardens, FL</p>
+      <p>Final</p>
+      <p>Capacidad: 65.300</p>
+    </div>
+    <div class="estadio">
+      <img src="images/bankofamerica.jpg" alt="Bank of America Stadium" width="300" height="150">
+      <h3>Bank of America Stadium</h3>
+      <p>Charlotte, NC</p>
+      <p></p>
+      <p>Capacidad: 74.500</p>
+    </div>
+  </div>
+  <div class="estadios-container">
+    <div class="estadio">
+      <img src="images/geha.jpg" alt="GEHA Field at Arrowhead Stadium" width="300" height="150">
+      <h3>GEHA Field at Arrowhead Stadium</h3>
+      <p>Kansas City, MO</p>
+      <p></p>
+      <p>Capacidad: 76.400</p>
+    </div>
+    <!-- Agrega aquí más estadios si es necesario -->
+  </div>
+</section>
+<!--------------------------------------------------------------------------------------->
+<div class="contenedor-calendario">
+  <h2 id="calendario">Calendario de Partidos</h2>
+  <section class="calendario">
+    <div class="fase">
+      <h3>Fase de Grupos</h3>
+    </div>
+    <div class="estilo-fase">
+      <div class="grupo a">
+        <h3>GRUPO A</h3>
+        <p><img src="images/arg.png" alt="Argentina"> ARGENTINA</p>
+        <p><img src="images/per.png" alt="Perú"> PERÚ</p>
+        <p><img src="images/chi.png" alt="Chile"> CHILE</p>
+        <p><img src="images/can.png" alt="Canadá"> CANADÁ</p>
+      </div>
+      <div class="grupo b">
+        <h3>GRUPO B</h3>
+        <p><img src="images/mex.png" alt="México"> MÉXICO</p>
+        <p><img src="images/ecu.png" alt="Ecuador"> ECUADOR</p>
+        <p><img src="imageS/ven.png" alt="Venezuela"> VENEZUELA</p>
+        <p><img src="images/jam.png" alt="Jamaica"> JAMAICA</p>
+      </div>
+      <div class="grupo c">
+        <h3>GRUPO C</h3>
+        <p><img src="images/usa.png" alt="Estados Unidos">ESTADOS UNIDOS</p>
+        <p><img src="images/uru.png" alt="Uruguay"> URUGUAY</p>
+        <p><img src="images/pan.png" alt="Panama"> PANAMÁ</p>
+        <p><img src="images/bol.png" alt="Bolivia"> BOLIVIA</p>
+      </div>
+      <div class="grupo d">
+        <h3>GRUPO D</h3>
+        <p><img src="images/bra.png" alt="Brazil"> BRASIL</p>
+        <p><img src="images/col.png" alt="Colombia"> COLOMBIA</p>
+        <p><img src="images/par.png" alt="Paraguay"> PARAGUAY</p>
+        <p><img src="images/cos.png" alt="Costa Rica"> COSTA RICA</p>
+      </div>
+    </section>
+  </div>
+  <!--------------------------------------------------------------------------------------->
+  <div class="contenedor-secciones">
+    <section class="partidos">
+      <h4>20/06/2024</h4>
+      <div class="estilo-partido">
+        <p class="letra">#1 | Grupo A | 20:00 (GMT-4h)</p>
+        <div class="partido">
+          <p>
+            ARG<img src="images/arg.png" alt="Argentina">-<img src="images/can.png" alt="Canadá">CAN
+          </p>
+        </div>
+        <p class="letra">Mercedes-Benz Stadium - ATLANTA, GA</p>
+      </div>
+    </section>
+    <section class="partidos">
+      <h4>21/06/2024</h4>
+      <div class="estilo-partido">
+        <p class="letra">#2 | Grupo A |19:00 (GMT-5h)</p>
+        <div class="partido">
+          <p>
+            PER<img src="images/per.png" alt="Peru">-<img src="images/chi.png" alt="Chile">CHI
+          </p>
+        </div>
+        <p class="letra">AT&T Stadium - ARLINGTON, TX</p>
+      </div>
+    </section>
+  </div>
+<!--------------------------------------------------------------------------------------->
+<div class="contenedor-secciones">
+  <section class="partidos">
+    <h4>22/06/2024</h4>
+    <div class="estilo-partido">
+      <p class="letra">#3 | Grupo B | 20:00 (GMT-5h)</p>
+      <div class="partido">
+        <p>
+          MEX<img src="images/mex.png" alt="Mexico">-<img src="images/jam.png" alt="Jamaica">JAM
+        </p>
+      </div>
+      <p class="letra">NRG Stadium - HOUSTON, TX</p>
+    </div>
+    <div class="estilo-partido">
+      <p class="letra">#4 | Grupo B |15:00 (GMT-7h)</p>
+      <div class="partido">
+        <p>
+          ECU<img src="images/ecu.png" alt="Ecuador">-<img src="images/ven.png" alt="Venezuela">VEN
+        </p>
+      </div>
+      <p class="letra">Levi's® Stadium - SANTA CLARA, CA</p>
+    </div>
+  </section>
+  <section class="partidos">
+    <h4>23/06/2024</h4>
+    <div class="estilo-partido">
+      <p class="letra">#5 | Grupo C |17:00 (GMT-5h)</p>
+      <div class="partido">
+        <p>
+          USA<img src="images/usa.png" alt="Estados Unidos">-<img src="images/bol.png" alt="Bolivia">BOL
+        </p>
+      </div>
+      <p class="letra">AT&T Stadium - ARLINGTON, TX</p>
+    </div>
+    <div class="estilo-partido">
+      <p class="letra">#6 | Grupo C | 21:00 (GMT-4h)</p>
+      <div class="partido">
+        <p>
+          URU<img src="images/uru.png" alt="Uruguay">-<img src="images/pan.png" alt="Panama">PAN
+        </p>
+      </div>
+      <p class="letra">Hard Rock Stadium - MIAMI, FL</p>
+    </div>
+  </section>
+</div>
+<!--------------------------------------------------------------------------------------->
+<section class="noticias">
+  <h2 id="noticias">Notícias</h2>
+  <div class="noticias-div">
+    <article>
+      <img src="images/Moreno-Martins.jpg" alt="Imagen de la noticia">
+      <div class="contenido-noticia">
+        <h3>El adiós de una leyenda sudamericana: Moreno Martins se retiró del fútbol</h3>
+        <p>Marcelo Moreno despedida</p>
+        <p>08-04-2024</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/Moreno-Martins.jpg" alt="Imagen de la noticia">
+      <div class="contenido-noticia">
+        <h3>El adiós de una leyenda sudamericana: Moreno Martins se retiró del fútbol</h3>
+        <p>Marcelo Moreno despedida</p>
+        <p>08-04-2024</p>
+      </div>
+    </article>
+    <article>
+      <img src="images/Moreno-Martins.jpg" alt="Imagen de la noticia">
+      <div class="contenido-noticia">
+        <h3>El adiós de una leyenda sudamericana: Moreno Martins se retiró del fútbol</h3>
+        <p>Marcelo Moreno despedida</p>
+        <p>08-04-2024</p>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- Resto de los artículos -->
 <footer>
-    <p>&copy;2024 Copa America. Todos los derechos reservados. ESAN</p>
+  <p>&copy;2024 Copa America. Todos los derechos reservados. ESAN</p> <!-- Información de derechos de autor -->
 </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+
 </html>

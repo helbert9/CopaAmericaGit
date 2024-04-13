@@ -1,26 +1,328 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
+head {
+  position: fixed;
+  width: 100%;
+  background-color: #fff; /* Puedes ajustar el color de fondo según sea necesario */
+  z-index: 1000; /* Asegura que el encabezado esté en la parte superior de la pila de elementos */
 }
 
-header{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Define la fuente del cuerpo, priorizando 'Poppins' si está disponible */
+  background-color: #fff; /* Establece el color de fondo del cuerpo */
+  margin: 0 auto; /* Elimina el margen exterior del cuerpo */
+  padding: 0; /* Elimina el relleno interior del cuerpo */
 }
 
-h1{
-    color: red;
+/* Estilos del encabezado */
+header {
+  background-color: #333; /* Establece el color de fondo del encabezado */
+  color: #fff; /* Establece el color del texto del encabezado */
+  /*padding: 10px; /* Añade un espacio interno alrededor del encabezado */
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  justify-content: space-between; /* Alinea los elementos horizontalmente con espacio entre ellos */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: center; /* Centra el texto de los títulos */
+  position: fixed;
+  top: 0; /* Fija el encabezado en la parte superior */
+  width: 100%; /* Establece el ancho al 100% del viewport */
+  z-index: 1000; /* Asegura que el encabezado esté en la parte superior */ 
 }
 
-.logo{
-    order: -1;
+/* Estilos del logo */
+.logo img {
+  width: 250px; /* Establece el ancho de la imagen del logo */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  margin-left: 15px; /* Agrega espacio por el margen izquierdo */ 
 }
 
-.logo img{
-    width: 200px;
-    height: auto;
+footer {
+  text-align: center; /* Alinea el contenido del pie de página al centro */
+  
+}
+
+/* Estilos del menú horizontal */
+.horizontal-menu {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el espacio de relleno predeterminado */
+  margin: 0; /* Quita el margen predeterminado */
+  display: flex; /* Utiliza flexbox para mostrar los elementos en línea */
+}
+.horizontal-menu li {
+  margin-right: 15px; /* Añade un espacio entre los elementos */
+}
+.horizontal-menu li:last-child {
+  margin-right: 20px; /* Quita el margen derecho del último elemento */
+}
+
+.horizontal-menu a {
+  color: #fff; /* Cambia el color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+.horizontal-menu a:hover {
+  color: #777; /* Cambia el color del texto de los enlaces al pasar el mouse */
+}
+
+/* Estilos de las secciones de equipos-------------------------------------------*/
+.equipos{
+  margin-left: 20px; /* Ajusta el valor según sea necesario */
+  background-color: white; /* Establece el color de fondo de las secciones */
+  color: black; /* Establece el color del texto de las secciones */
+  text-align: center; /* Alinea el contenido al centro */
+  margin: 80px auto 0; /* Centra horizontalmente y agrega espacio en la parte superior */
+  max-width: 800px; /* Establece un ancho máximo */
+  padding: 20px; /* Añade espacio interno alrededor de la sección de calendario */   
+}
+
+/* Estilos de las tablas de equipos----------------------------------------- ----*/
+.tabla-equipos {
+  width: 100%; /* Ancho de la tabla */
+  border-collapse: collapse; /* Combina los bordes de las celdas de la tabla */
+}
+.tabla-equipos th, .tabla-equipos td {
+  border: 1px solid #ddd; /* Borde de las celdas */
+  padding: 8px; /* Espaciado interno de las celdas */
+  text-align: left; /* Alineación del texto dentro de las celdas */
+}
+.tabla-equipos th {
+  background-color: #333; /* Color de fondo para las celdas del encabezado */
+  color: #fff; /* Color del texto en las celdas del encabezado */
+}
+.tabla-equipos tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Color de fondo para las filas impares */
+}
+/*.tabla-equipos tr:hover {
+    background-color: #ddd; /* Cambia el color de fondo cuando se pasa el mouse sobre una fila */
+
+/*-----Estilos de las tablas de estadios---------------------------------------*/
+.estadios{
+  margin-left: 20px; /* Ajusta el valor según sea necesario */
+  background-color: white; /* Establece el color de fondo de las secciones */
+  color: black; /* Establece el color del texto de las secciones */
+  text-align: center; /* Alinea el contenido al centro */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 800px; /* Establece un ancho máximo */
+  padding: 20px; /* Añade espacio interno alrededor de la sección de calendario */
+  margin: 80px auto 0; /* Centra horizontalmente y agrega espacio en la parte superior */
+}
+.imagen-mapa img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px; /* Bordes redondeados de 20px en las cuatro esquinas */
+}
+.estadios h2{
+  text-align: center; /* Centra el título "Calendario de Partidos" */
+  padding: 20px;
+  text-align: center;
+  /*background-color: #f9f9f9;*/
+}
+.estadios li {
+  border: 1px solid #ddd; /* Borde de cada elemento li */
+  padding: 5px; /* Espaciado interno de cada elemento li, reducido a 5px */
+  margin-bottom: 10px; /* Margen inferior entre cada elemento li, reducido a 10px */
+}
+.estadios li h3 {
+  margin-top: 0; /* Elimina el margen superior del título h3 dentro de cada elemento li */
+  margin-bottom: 2px; /* Añade un pequeño margen inferior al título h3, reducido a 2px */
+}
+.estadios li p {
+  margin: 0; /* Elimina todo el margen alrededor de los párrafos dentro de cada elemento li */
+}
+.estadios ul {
+  display: flex; /* Utiliza flexbox para mostrar los elementos en línea */
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el espacio de relleno predeterminado */
+  margin: 0; /* Quita el margen predeterminado */
+}
+.estadios li {
+  flex: 1; /* Hace que cada elemento li ocupe el mismo espacio disponible */
+  margin-right: 10px; /* Añade un margen derecho entre los elementos li, reducido a 10px */
+}
+.estadios li:last-child {
+  margin-right: 0; /* Quita el margen derecho del último elemento li */
+}
+.estadios ul li {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.estadios ul li img {
+  margin-bottom: 5px; /* Agrega espacio entre la imagen y el texto, reducido a 5px */
+}
+.estadios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px; /* Ajusta el margen superior para separar los contenedores de estadios */
+}
+.estadio {
+  width: calc(33.33% - 10px); /* Tres columnas, cada una con un margen de 10px */
+  margin-bottom: 10px; /* Margen inferior entre cada estadio, reducido a 10px */
+  /*padding: 5px; /* Espaciado interno de cada estadio, reducido a 5px */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.estadio img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.estadio h3 {
+  margin-top: 5px; /* Margen superior del título h3, reducido a 5px */
+  margin-bottom: 2px; /* Margen inferior del título h3, reducido a 2px */
+}
+.estadio p {
+  margin: 2px 0; /* Margen de los párrafos, reducido a 2px arriba y abajo */
+}
+
+/*---------Estilos para la sección de calendario---------------------------------*/
+.calendario{
+  margin-left: 20px; /* Ajusta el valor según sea necesario */
+  background-color: white; /* Establece el color de fondo de las secciones */
+  color: black; /* Establece el color del texto de las secciones */
+  text-align: center; /* Alinea el contenido al centro */
+  margin: 0 auto; /* Centra horizontalmente */
+  max-width: 800px; /* Establece un ancho máximo */
+  padding: 20px; /* Añade espacio interno alrededor de la sección de calendario */
+
+}
+.contenedor-calendario h2 {
+  text-align: left; /* Alinea el texto al margen izquierdo */
+  margin-top: 40px; /* Agrega espacio en la parte superior */
+  text-align: center;
+}
+.estilo-fase {
+  display: flex; /* Utiliza flexbox para alinear los grupos horizontalmente */
+  justify-content: space-between; /* Distribuye los grupos uniformemente en el contenedor */
+  flex-wrap: wrap; /* Permite que los grupos se envuelvan en filas si no hay suficiente espacio */
+}
+.fase {
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px; /* Espacio interno alrededor del contenido */
+  text-align: center; /* Centra el texto */
+  color: #ffffff; /* Color del texto blanco */
+  background-color: #112e73; /* Fondo azul oscuro */
+  margin: 0 auto 20px; /* Margen automático en la parte superior e inferior, y automático en los lados para centrar */
+  display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+}
+/* Cambia el color del borde cuando se pasa el cursor sobre la sección */
+.fase:hover {
+  border-color: #d6caca; /* Cambia el color del borde al pasar el cursor */
+}
+.grupo {
+  width: calc(25% - 20px); /* Establece el ancho de cada grupo, restando el margen */
+  margin-bottom: 20px; /* Añade espacio entre los grupos */
+  /*padding: 10px; /* Añade espacio interno a cada grupo */
+  background-color: #f9f9f9; /* Establece el color de fondo de cada grupo */
+  border-radius: 10px; /* Agrega bordes redondeados a los grupos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil a los grupos */
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  flex-direction: column; /* Alinea los elementos en una columna */
+}
+.grupo h3 {
+  margin-top: 10px; /* Añade espacio por encima del título de cada grupo */
+  margin-bottom: 10px; /* Añade espacio por debajo del título de cada grupo */
+  text-align: center; /* Centra el texto del título de cada grupo */
+  color: white; /* Establece el color del texto como blanco */
+}
+.grupo p {
+  margin: 10px; /* Añade espacio alrededor de cada elemento de párrafo dentro de los grupos */
+  text-align: center; /* Centra el texto de cada elemento de párrafo dentro de los grupos */
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 5px; /* Ajusta el margen inferior entre los elementos */
+  color: white; /* Establece el color del texto como blanco */
+}
+.a {
+  background-color: #112e73; /* Color dorado para el Grupo A */
+}
+.b {
+  background-color: #9e0e0e; /* Color rosa para el Grupo B */
+}
+.c {
+  background-color: #4eb224; /* Color azul claro para el Grupo C */
+}
+.d {
+  background-color: #c0bd27; /* Color verde lima para el Grupo D */
+}
+.grupo p img {
+  width: 35px; /* Establece el ancho deseado solo para el icono */
+  height: 25px; /* Establece la altura deseada solo para el icono */
+}
+
+/*-------------Estilos del partido--------------------------------------------------*/
+.contenedor-secciones {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las secciones */
+  margin-bottom: 30px; /* Agrega un espacio en la parte inferior entre las secciones */
+  width: 100%; /* Opcional: ajusta el ancho del contenedor */
+}
+.partidos {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  margin: 0 25px; /* Margen horizontal para las secciones */
+}
+.estilo-partido {
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Establece el ancho de la sección */
+  box-sizing: border-box;
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra al elemento */
+}
+.partido {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  /*margin-bottom: 0 5px;*/ /* Ajusta el margen inferior entre los elementos */
+}
+.partido p {
+  margin: 0px; /* Añade espacio alrededor de cada elemento de párrafo dentro de los grupos */
+  text-align: center; /* Centra el texto de cada elemento de párrafo dentro de los grupos */
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+.partido p img {
+  width: 50px; /* Ancho deseado para los iconos */
+  height: 35px; /* Altura deseada para los iconos */
+  margin-right:30Px; /* Ajusta el margen derecho para separar los iconos del texto */
+  margin: 0 25px; /* Añade un margen horizontal solo entre los iconos */
+}
+.partidos .estilo-partido .letra {
+  font-size: 13px; /* Tamaño de fuente más pequeño */
+}
+
+/*--------------------Noticias-----------------------------------------------------*/
+.noticias {
+  padding: 20px;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  text-align: center; /* Centra el texto horizontalmente */
+  max-width: 1000px; /* Establece el ancho máximo de la sección *
+  text-align: left; /* Alinea el texto del contenido de las noticias hacia la izquierda */
+}
+.noticias h2 {
+  text-align: center; /* Centra el título "Notícias" */
+}
+.noticias-div {
+  display: flex; /* Utiliza flexbox para alinear los artículos horizontalmente */
+}
+article {
+  flex: 1; /* Hace que los artículos ocupen el mismo ancho */
+  margin: 0 10px; /* Margen entre los artículos */
+}
+article img {
+  width: 100%; /* Para que la imagen ocupe todo el ancho del artículo */
 }
